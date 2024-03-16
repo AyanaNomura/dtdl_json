@@ -105,3 +105,16 @@ sample.goがsampleフォルダにあること
 
 <p>*config.jsonとsample.xlsxがC:\Go\testmtx-1.1.1\sampleに入っていないと動かない</p>
 
+補足
+outフォルダに吐き出される中身の説明
+<p>C:\Go\testmtx-1.1.1\sample\out\expected</p>
+期待結果
+{
+  "status": "success",
+  "code": 200
+}
+
+<p>C:\Go\testmtx-1.1.1\sample\out\request</p>
+テスト実施に使うjson
+
+EOF
