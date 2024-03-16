@@ -4,102 +4,103 @@ dtdl_json
 #　これは完全に自分用メモ
 
 DTDLの仕様
-https://learn.microsoft.com/ja-jp/azure/digital-twins/concepts-models
+<p>https://learn.microsoft.com/ja-jp/azure/digital-twins/concepts-models</p>
 
 テスト定義書→テスト用JSONファイル
-https://github.com/takuoki/testmtx/blob/main/README.md
-https://medium.com/veltra-engineering/a-tool-to-generate-test-json-files-from-a-test-definition-sheets-c36b77ab886f
+<p>https://github.com/takuoki/testmtx/blob/main/README.md</p>
+<p>https://medium.com/veltra-engineering/a-tool-to-generate-test-json-files-from-a-test-definition-sheets-c36b77ab886f</p>
 
 testmtx_sample のコピーしてsample.xlsxとしてローカルに置く・・・[手順1]
-https://docs.google.com/spreadsheets/d/1BhE4zmjB9cTZFP3Bl2A5ZQjLfeDtAhrOjBbQBt7vqKo/edit#gid=0
+<p>https://docs.google.com/spreadsheets/d/1BhE4zmjB9cTZFP3Bl2A5ZQjLfeDtAhrOjBbQBt7vqKo/edit#gid=0</p>
 
-credentials.jsonの作成・・・[手順2]
+<p>credentials.jsonの作成・・・[手順2]</p>
 GCPコンソール
-https://console.cloud.google.com/home/dashboard
-[APIとサービス] - [認証情報]でOAuth同意画面の設定とOAuthクライアントIDの作成
-https://blog.serverworks.co.jp/2021/01/08/130956
-一応作成したけど、いらないかも？認証時にGoogleログインを1回したけど、社内ルールではダメだと思う
+<p>https://console.cloud.google.com/home/dashboard</p>
+<p>[APIとサービス] - [認証情報]でOAuth同意画面の設定とOAuthクライアントIDの作成</p>
+<p>https://blog.serverworks.co.jp/2021/01/08/130956</p>
+<p>一応作成したけど、いらないかも？認証時にGoogleログインを1回したけど、社内ルールではダメだと思う</p>
 
 --**---
-クライアント ID	keepメモ参照
-クライアント シークレット	keepメモ参照
-作成日	2024年3月16日 11:29:17 GMT+9
+<p>クライアント ID	keepメモ参照</p>
+<p>クライアント シークレット	keepメモ参照</p>
+<p>作成日	2024年3月16日 11:29:17 GMT+9</p>
 --**--
 
 (1) WindowsにGo言語開発環境をインストールする
-https://qiita.com/suke_masa/items/0c45c92934b9a2807ddb
+<p>https://qiita.com/suke_masa/items/0c45c92934b9a2807ddb</p>
 
 *C:\Goにインストールすること
 
 (2) コマンドプロンプトで go version コマンドを実行してください。インストールしたGoのバージョンが表示されれば成功です。
 
 Visual Studio Codeの導入
-https://qiita.com/suke_masa/items/91fddf0728a290b72fc4
+<p>https://qiita.com/suke_masa/items/91fddf0728a290b72fc4</p>
 
 (3) Visual Studio CodeのGo Extension
 拡張機能(Ctrl+Shift+X)
-https://qiita.com/melty_go/items/c977ba594efcffc8b567
+<p>https://qiita.com/melty_go/items/c977ba594efcffc8b567</p>
 (4) Extensionの検索画面を開いて「go」で検索→[Go Team at Google]のGoエクステンションをInstallしてください。
 
 (5) [View]-[Command Palette]（またはCtrl+Shift+P）でコマンドパレットを開いてください。
 (6) コマンドパレットに「go update」と入力すると、[Go: Install/Update Tools]という項目が出てくるので、これをクリックしてください。
- [gocode]・[gopkgs]にチェック（出ないときは下記の２つを実施）
+<p> [gocode]・[gopkgs]にチェック（出ないときは下記の２つを実施）</p>
 
  ・Goの環境構築からHello Worldまで
- https://zenn.dev/collabostyle/articles/762a357f01201e
+ <p>https://zenn.dev/collabostyle/articles/762a357f01201e</p>
  ・ターミナルに入力するコマンド
- https://github.com/qt-luigi/vscode-go-docs-jp
+ <p>https://github.com/qt-luigi/vscode-go-docs-jp</p>
 
-*gocode: go get -u -v github.com/nsf/gocode
-godef: go get -u -v github.com/rogpeppe/godef
-gogetdoc: go get -u -v github.com/zmb3/gogetdoc
-golint: go get -u -v github.com/golang/lint/golint
-go-outline: go get -u -v github.com/lukehoban/go-outline
-goreturns: go get -u -v sourcegraph.com/sqs/goreturns
-gorename: go get -u -v golang.org/x/tools/cmd/gorename
-*gopkgs: go get -u -v github.com/tpng/gopkgs
-go-symbols: go get -u -v github.com/newhook/go-symbols
-guru: go get -u -v golang.org/x/tools/cmd/guru
-gotests: go get -u -v github.com/cweill/gotests/...
+<p>*gocode: go get -u -v github.com/nsf/gocode</p>
+<p>godef: go get -u -v github.com/rogpeppe/godef</p>
+<p>gogetdoc: go get -u -v github.com/zmb3/gogetdoc</p>
+<p>golint: go get -u -v github.com/golang/lint/golint</p>
+<p>go-outline: go get -u -v github.com/lukehoban/go-outline</p>
+<p>goreturns: go get -u -v sourcegraph.com/sqs/goreturns</p>
+<p>gorename: go get -u -v golang.org/x/tools/cmd/gorename</p>
+<p>*gopkgs: go get -u -v github.com/tpng/gopkgs</p>
+<p>go-symbols: go get -u -v github.com/newhook/go-symbols</p>
+<p>guru: go get -u -v golang.org/x/tools/cmd/guru</p>
+<p>gotests: go get -u -v github.com/cweill/gotests/...</p>
 
 (7) testmtx
-https://github.com/takuoki/testmtx?tab=readme-ov-file
+<p>https://github.com/takuoki/testmtx?tab=readme-ov-file</p>
 インストール
-Go 環境がある場合は、 を使用してこのツールをインストールできますgo get。インストールする前に、Go モジュール機能を有効にしてください。
+<p>Go 環境がある場合は、 を使用してこのツールをインストールできますgo get。インストールする前に、Go モジュール機能を有効にしてください。</p>
 
-go install github.com/takuoki/testmtx/tools/testmtx@v1.1.1
+<p>go install github.com/takuoki/testmtx/tools/testmtx@v1.1.1</p>
 そうでない場合は、リリース ページからダウンロードしてください。
-https://github.com/takuoki/testmtx/releases
+<p>https://github.com/takuoki/testmtx/releases</p>
 
 (8) Googleスプレッドシートを使用する場合
-このツールはGoogle OAuth2.0を使用しています。したがって、ツールを実行する前に、 credentials.jsonを準備する必要があります
+<p>このツールはGoogle OAuth2.0を使用しています。したがって、ツールを実行する前に、 credentials.jsonを準備する必要があります</p>
 
 テストデータファイルの出力
 1. テストケースを作成する
-サンプル シートをコピーし、必要に応じて記入します。Microsoft Excelを使用する場合は、同じ形式でシートを作成してください。
+<p>サンプル シートをコピーし、必要に応じて記入します。Microsoft Excelを使用する場合は、同じ形式でシートを作成してください。</p>
 
-C:\Go\testmtx-1.1.1にダウンロードしてきたリソースを展開しておく
-ここまで来たら、C:\Go\go-appも存在するはず
+<p>C:\Go\testmtx-1.1.1にダウンロードしてきたリソースを展開しておく</p>
+ここまで来たら、"C:\Go\go-app"も存在するはず
 
 >設定ファイル
-構成ファイルを使用していくつかの追加機能を使用できます。これらの機能を使用する場合は、コマンドライン引数として設定ファイルを指定します。
+<p>構成ファイルを使用していくつかの追加機能を使用できます。これらの機能を使用する場合は、コマンドライン引数として設定ファイルを指定します。</p>
 config.jsonがsampleフォルダにあること
-"C:\Go\testmtx-1.1.1\sample\config.json"
+<p>"C:\Go\testmtx-1.1.1\sample\config.json"</p>
 
 ターミナルで次の入力をする
-$ testmtx -c config.json conf
+<p>$ testmtx -c config.json conf</p>
 
 >以下のようなテスト データの Go タイプがすでにある場合は、このツールを使用してプロパティ リストを生成できます。
 sample.goがsampleフォルダにあること
-"C:\Go\testmtx-1.1.1\sample\sample.go"
+<p>"C:\Go\testmtx-1.1.1\sample\sample.go"</p>
 
 ターミナルで次の入力をする
-testmtx prop -f sample/sample.go -t Request
+<p>testmtx prop -f sample/sample.go -t Request</p>
 
 >2. コマンドを実行する
 サブコマンドを使用するとout、シートでテストデータを生成できます
 
 ケース: Microsoft Excel
-$ testmtx -c config.json out -x sample.xlsx
+<p>$ testmtx -c config.json out -x sample.xlsx</p>
 
-*config.jsonとsample.xlsxがC:\Go\testmtx-1.1.1\sampleに入っていないと動かない
+<p>*config.jsonとsample.xlsxがC:\Go\testmtx-1.1.1\sampleに入っていないと動かない</p>
+
