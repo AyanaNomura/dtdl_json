@@ -42,6 +42,7 @@ Visual Studio Codeの導入
 (4) Extensionの検索画面を開いて「go」で検索→[Go Team at Google]のGoエクステンションをInstallしてください。
 
 (5) [View]-[Command Palette]（またはCtrl+Shift+P）でコマンドパレットを開いてください。
+
 (6) コマンドパレットに「go update」と入力すると、[Go: Install/Update Tools]という項目が出てくるので、これをクリックしてください。
 <p> [gocode]・[gopkgs]にチェック（出ないときは下記の２つを実施）</p>
 
@@ -82,7 +83,7 @@ Visual Studio Codeの導入
 ここまで来たら、"C:\Go\go-app"も存在するはず
 
 >設定ファイル
-<p>構成ファイルを使用していくつかの追加機能を使用できます。これらの機能を使用する場合は、コマンドライン引数として設定ファイルを指定します。</p>
+>構成ファイルを使用していくつかの追加機能を使用できます。これらの機能を使用する場合は、コマンドライン引数として設定ファイルを指定します。
 config.jsonがsampleフォルダにあること
 <p>"C:\Go\testmtx-1.1.1\sample\config.json"</p>
 
@@ -97,9 +98,9 @@ sample.goがsampleフォルダにあること
 <p>testmtx prop -f sample/sample.go -t Request</p>
 
 >2. コマンドを実行する
-サブコマンドを使用するとout、シートでテストデータを生成できます
+>サブコマンドを使用するとout、シートでテストデータを生成できます
 
-ケース: Microsoft Excel
+>ケース: Microsoft Excel
 <p>$ testmtx -c config.json out -x sample.xlsx</p>
 
 <p>*config.jsonとsample.xlsxがC:\Go\testmtx-1.1.1\sampleに入っていないと動かない</p>
